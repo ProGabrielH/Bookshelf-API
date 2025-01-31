@@ -1,10 +1,11 @@
 package br.com.gabriel.bookshelfapi.data.vo.v1;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class CategoryVO {
+public class CategoryVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 

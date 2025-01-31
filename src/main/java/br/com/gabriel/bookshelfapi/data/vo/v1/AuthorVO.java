@@ -1,10 +1,11 @@
 package br.com.gabriel.bookshelfapi.data.vo.v1;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class AurhorVO {
+public class AuthorVO implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -22,9 +23,9 @@ public class AurhorVO {
         book.setAuthor(null);
     }
 
-    public AurhorVO() {}
+    public AuthorVO() {}
 
-    public AurhorVO(Long id, String name, List<BookVO> books) {
+    public AuthorVO(Long id, String name, List<BookVO> books) {
         this.id = id;
         this.name = name;
         this.books = books;
@@ -58,8 +59,8 @@ public class AurhorVO {
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
-        AurhorVO aurhorVO = (AurhorVO) o;
-        return Objects.equals(id, aurhorVO.id) && Objects.equals(name, aurhorVO.name) && Objects.equals(books, aurhorVO.books);
+        AuthorVO authorVO = (AuthorVO) o;
+        return Objects.equals(id, authorVO.id) && Objects.equals(name, authorVO.name) && Objects.equals(books, authorVO.books);
     }
 
     @Override

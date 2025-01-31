@@ -1,19 +1,20 @@
 package br.com.gabriel.bookshelfapi.data.vo.v1;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class BookVO {
+public class BookVO implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private Long id;
     private String name;
     private String description;
-    private AurhorVO author;
+    private AuthorVO author;
     private CategoryVO category;
 
     public BookVO() {}
 
-    public BookVO(Long id,String name, String description, AurhorVO author, CategoryVO category) {
+    public BookVO(Long id, String name, String description, AuthorVO author, CategoryVO category) {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -45,11 +46,11 @@ public class BookVO {
         this.description = description;
     }
 
-    public AurhorVO getAuthor() {
+    public AuthorVO getAuthor() {
         return author;
     }
 
-    public void setAuthor(AurhorVO author) {
+    public void setAuthor(AuthorVO author) {
         if (this.author != null) {
             this.author.getBooks().remove(this);
         }
