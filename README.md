@@ -4,7 +4,7 @@ Bookshelf API é uma aplicação para gerenciamento de livros, permitindo a cons
 
 ## Status do Projeto
 
-🚧 Em desenvolvimento 🚧
+✔️ Concluído ✔️
 
 ## Tecnologias Utilizadas
 
@@ -18,26 +18,26 @@ Bookshelf API é uma aplicação para gerenciamento de livros, permitindo a cons
 
 ## Endpoints Disponíveis
 
-### Livros (Books)
-- `GET /books` - Lista todos os livros
-- `GET /books/{id}` - Obtém um livro pelo ID
-- `POST /books` - Adiciona um novo livro
-- `PUT /books/{id}` - Atualiza um livro existente
+### Livro (Book)
+- `GET /book` - Lista todos os livros
+- `GET /book/{id}` - Obtém um livro pelo ID
+- `POST /book` - Adiciona um novo livro
+- `PUT /book` - Atualiza um livro existente
 - `DELETE /books/{id}` - Remove um livro
 
-### Autores (Authors)
-- `GET /authors` - Lista todos os autores
-- `GET /authors/{id}` - Obtém um autor pelo ID
-- `POST /authors` - Adiciona um novo autor
-- `PUT /authors/{id}` - Atualiza um autor existente
-- `DELETE /authors/{id}` - Remove um autor
+### Autor (Author)
+- `GET /author` - Lista todos os autores
+- `GET /author/{id}` - Obtém um autor pelo ID
+- `POST /author` - Adiciona um novo autor
+- `PUT /author` - Atualiza um autor existente
+- `DELETE /author/{id}` - Remove um autor
 
-### Categorias (Categories)
-- `GET /categories` - Lista todas as categorias
-- `GET /categories/{id}` - Obtém uma categoria pelo ID
-- `POST /categories` - Adiciona uma nova categoria
-- `PUT /categories/{id}` - Atualiza uma categoria existente
-- `DELETE /categories/{id}` - Remove uma categoria
+### Categoria (Category)
+- `GET /category` - Lista todas as categorias
+- `GET /category/{id}` - Obtém uma categoria pelo ID
+- `POST /category` - Adiciona uma nova categoria
+- `PUT /category` - Atualiza uma categoria existente
+- `DELETE /category/{id}` - Remove uma categoria
 
 ## Possíveis Futuras Implementações
 - Autenticação e Autorização com JWT
