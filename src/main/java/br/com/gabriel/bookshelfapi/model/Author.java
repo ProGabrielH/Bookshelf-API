@@ -20,7 +20,7 @@ public class Author implements Serializable {
     @Column(length = 50, nullable = false)
     private String name;
 
-    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Book> books = new ArrayList<>();
 
     public void addBook(Book book){

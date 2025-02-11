@@ -23,7 +23,7 @@ public class Category implements Serializable {
     @Column(length = 255)
     private String description;
 
-    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "category", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Book> books = new ArrayList<>();
 
     public void addBook(Book book){
